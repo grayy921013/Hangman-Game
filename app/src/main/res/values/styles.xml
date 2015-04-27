@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppNoTitleTheme" parent="@style/AppTheme">
+        <!-- Customize your theme here. -->
+
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <!-- Customize your theme here. -->
+        <item name="android:actionBarStyle">@style/actionbar_style</item>
+        <item name="android:buttonStyle">@style/button_style</item>
+    </style>
+    <style name="actionbar_style" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#fff</item>
+    </style>
+    <style name="button_style" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/btn_bg</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:padding">10dp</item>
+    </style>
+</resources>

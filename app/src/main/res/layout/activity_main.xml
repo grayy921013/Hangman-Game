@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <hk.vincent.hangman.CustomFontTextView
+            android:textSize="@dimen/normal_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/word" />
+
+        <hk.vincent.hangman.CustomFontTextView
+            android:textSize="@dimen/normal_word"
+            android:id="@+id/word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_margin" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row1"
+        android:orientation="horizontal">
+
+        <hk.vincent.hangman.CustomFontTextView
+            android:textSize="@dimen/normal_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/miss" />
+
+        <hk.vincent.hangman.CustomFontTextView
+            android:textSize="@dimen/normal_word"
+            android:id="@+id/miss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_margin" />
+    </LinearLayout>
+
+    <hk.vincent.hangman.CustomFontButton
+        android:id="@+id/start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/start_game" />
+
+    <hk.vincent.hangman.CustomFontButton
+        android:id="@+id/skip_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/next_word"
+        android:visibility="gone" />
+
+    <hk.vincent.hangman.CustomFontButton
+        android:id="@+id/end_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_margin"
+        android:layout_below="@+id/skip_btn"
+        android:layout_centerHorizontal="true"
+        android:text="@string/end_game"
+        android:visibility="gone" />
+
+    <hk.vincent.hangman.CustomFontTextView
+        android:textSize="@dimen/normal_word"
+        android:id="@+id/no_keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/start_btn"
+        android:gravity="right"
+        android:text="@string/no_keyboard" />
+
+    <hk.vincent.hangman.CustomFontTextView
+        android:textSize="@dimen/normal_word"
+        android:id="@+id/hint_req"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/start_btn"
+        android:text="@string/need_hint" />
+
+    <EditText
+        android:id="@+id/keyboard_helper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/no_keyboard"
+        android:layout_alignLeft="@id/no_keyboard"
+        android:layout_alignRight="@id/no_keyboard"
+        android:layout_alignTop="@id/no_keyboard"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:inputType="textPassword"
+        android:textSize="0dp" />
+
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <hk.vincent.hangman.CustomFontTextView
+            android:textSize="@dimen/normal_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/numofword" />
+
+        <hk.vincent.hangman.CustomFontTextView
+            android:textSize="@dimen/normal_word"
+            android:id="@+id/numofword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_margin" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/row2"
+        android:orientation="horizontal">
+
+        <hk.vincent.hangman.CustomFontTextView
+            android:textSize="@dimen/normal_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/numberOfGuess" />
+
+        <hk.vincent.hangman.CustomFontTextView
+            android:textSize="@dimen/normal_word"
+            android:id="@+id/numberOfGuess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_margin" />
+    </LinearLayout>
+
+</RelativeLayout>
