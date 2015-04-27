@@ -10,8 +10,8 @@ You can get hint by click \"Need hint\".
 Make sure you have submitted the highest score!
         
 Added functionalities:
-1. Remember the missed words for user, and prevent user from guessing entered words.
-2. Use a online API to build a hint function which will give a hint based on possibility.
-3. Custom Font for all widgets.
-4. A splash screen and a tutorial screen.
+1. Remember the missed words for user, and prevent user from guessing entered words.  
+2. Use a online API to build a hint function which will give a hint based on possibility.  
+3. Custom Font for all widgets.  
+4. A splash screen and a tutorial screen.  
 5. Update result after avery guessing action.
